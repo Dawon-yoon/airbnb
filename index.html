@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>airbnb</title>
+    <link rel="icon" href="./img/airbnb-favicon.svg">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo-img" width="116" height="62" src="./img/Airbnb_Logo.svg" alt="Airbnb logo"/>
+        <div class="search-tab">
+            <button class="search-tab__btn">どこでも</button>
+            <span class="divider"></span>
+            <button class="search-tab__btn">週の指定なし</button>
+            <span class="divider"></span>
+            <button class="search-tab__btn">ゲスト数を追加</button>
+            <div class="magnifying-icon__wrap">
+            <img class="magnifying-icon" src="./img/Magnifying_glass_icon.svg" alt="magnifying glass icon"/></div>            
+        </div>
+        <div class="header-right-section">
+            <div class="do-airbnb">
+                Airbnbににお部屋を掲載
+            </div>
+            <div class="profile-section">
+                <img width="16" src="./img/list.svg" alt="profile list icon">
+                <img width="30" src="./img/user-circle.svg" alt="user icon">
+            </div>
+        </div>
+    </header>
+    <div class="category-bar">
+        <button id="active-categoryBtn" class="category-bar__btn">
+            <div>
+            <i class="fa-brands fa-fort-awesome-alt"></i>
+            </div>
+            <div class="category-bar__text">
+            歴史ある建物
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-mountain-sun"></i>
+            </div>
+            <div class="category-bar__text">
+                最高の眺め
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+            <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="category-bar__text">
+                ログハウス
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-regular fa-face-surprise"></i>
+            </div>
+            <div class="category-bar__text">
+                スゴイ！
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-fire"></i>
+            </div>
+            <div class="category-bar__text">
+                人気上昇中
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-cubes-stacked"></i>
+            </div>
+            <div class="category-bar__text">
+                オフグリッドな暮らし
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-caravan"></i>
+            </div>
+            <div class="category-bar__text">
+                キャンピングカー
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-mound"></i>
+            </div>
+            <div class="category-bar__text">
+                島
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-tree"></i>
+            </div>
+            <div class="category-bar__text">
+                国立公園
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-regular fa-futbol"></i>
+            </div>
+            <div class="category-bar__text">
+                子どもと一緒に
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-person-skiing"></i>
+            </div>
+            <div class="category-bar__text">
+            スキーン／アウト 
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-regular fa-snowflake"></i>
+            </div>
+            <div class="category-bar__text">
+                北極圏
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-umbrella-beach"></i>
+            </div>
+            <div class="category-bar__text">
+                ビーチ
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-campground"></i>
+            </div>
+            <div class="category-bar__text">
+                キャンプ
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-water-ladder"></i>
+            </div>
+            <div class="category-bar__text">
+                素敵なプール
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-temperature-high"></i>
+            </div>
+            <div class="category-bar__text">
+                常夏
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-golf-ball-tee"></i>
+            </div>
+            <div class="category-bar__text">
+                ゴルフ
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-apple-whole"></i>
+            </div>
+            <div class="category-bar__text">
+                りんご園
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <div class="category-bar__text">
+                B&B
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-landmark"></i>
+            </div>
+            <div class="category-bar__text">
+                人気の観光地
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-cow"></i>
+            </div>
+            <div class="category-bar__text">
+                農園
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div class="category-bar__text">
+                シェフ仕様のキッチン
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-mountain"></i>
+            </div>
+            <div class="category-bar__text">
+                世界の頂から
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-box"></i>
+            </div>
+            <div class="category-bar__text">
+                コンテナ
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-compact-disc"></i>
+            </div>
+            <div class="category-bar__text">
+                音楽のある部屋
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="category-bar__text">
+                創作スペース
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-spa"></i>
+            </div>
+            <div class="category-bar__text">
+                ヒーリングスペース
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-sailboat"></i>
+            </div>
+            <div class="category-bar__text">
+                ボート・船
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-baby-carriage"></i>
+            </div>
+            <div class="category-bar__text">
+                キッズスペース
+            </div>
+        </button>
+        <button class="category-bar__btn">
+            <div>
+                <i class="fa-solid fa-wheelchair"></i>
+            </div>
+            <div class="category-bar__text">
+                車椅子ユーザー向け
+            </div>
+        </button>
+    </div>
+    <main>
+    <div id="place-list-wrapper">
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+            <img width="308" height="283" src="./img/photo1.jpg">
+            <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                <h1>日本、Niseko,Abuta District</h1><div><i class="fa-solid fa-star"></i>5.0</div></div>
+                <span>綺麗な自然</span>
+                <span>3/21日〜23日</span>
+                <span>¥48,340/泊</span>
+            </div>
+        </div>
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+                <img width="308" height="283" src="./img/photo2.jpg">
+                <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                    <h1>日本、Hakuda District</h1>
+                    <div><i class="fa-solid fa-star"></i>4.8</div>
+                </div>
+                <span>北欧の気分</span>
+                <span>3/23日〜25日</span>
+                <span>¥39,820/泊</span>
+            </div>
+        </div>
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+                <img width="308" height="283" src="./img/photo3.jpg">
+                <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                    <h1>日本、Teshikaga District</h1>
+                    <div><i class="fa-solid fa-star"></i>4.2</div>
+                </div>
+                <span>森の景色</span>
+                <span>3/22日〜24日</span>
+                <span>¥30,450/泊</span>
+            </div>
+        </div>
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+                <img width="308" height="283" src="./img/photo4.jpg">
+                <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                    <h1>日本、Chosei District</h1>
+                    <div><i class="fa-solid fa-star"></i>4.6</div>
+                </div>
+                <span>森の景色</span>
+                <span>3/22日〜24日</span>
+                <span>¥41,000/泊</span>
+            </div>
+        </div>
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+                <img width="308" height="283" src="./img/photo5.jpg">
+                <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                    <h1>日本、Minakami,Tone District</h1>
+                    <div><i class="fa-solid fa-star"></i>4.7</div>
+                </div>
+                <span>City view</span>
+                <span>3/25日〜26日</span>
+                <span>¥27,820/泊</span>
+            </div>
+        </div>
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+                <img width="308" height="283" src="./img/photo6.jpg">
+                <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                    <h1>日本、Shinano District</h1>
+                    <div><i class="fa-solid fa-star"></i>5.0</div>
+                </div>
+                <span>キャンプの気分</span>
+                <span>3/25日〜27日</span>
+                <span>¥60,000/泊</span>
+            </div>
+        </div>
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+                <img width="308" height="283" src="./img/photo7.jpg">
+                <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                    <h1>日本、下田市</h1>
+                    <div><i class="fa-solid fa-star"></i>4.9</div>
+                </div>
+                <span>森のキッチン</span>
+                <span>3/22日〜24日</span>
+                <span>¥49,600/泊</span>
+            </div>
+        </div>
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+                <img width="308" height="283" src="./img/photo8.jpg">
+                <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                    <h1>日本、下野市</h1>
+                    <div><i class="fa-solid fa-star"></i>3.7</div>
+                </div>
+                <span>駅近のお部屋</span>
+                <span>3/28日〜30日</span>
+                <span>¥29,900/泊</span>
+            </div>
+        </div>
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+                <img width="308" height="283" src="./img/photo9.jpg">
+                <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                    <h1>日本,Tokyo</h1>
+                    <div><i class="fa-solid fa-star"></i>4.4</div>
+                </div>
+                <span>緑のインテリア</span>
+                <span>4/1日〜2日</span>
+                <span>¥31,200/泊</span>
+            </div>
+        </div>
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+                <img width="308" height="283" src="./img/photo11.jpg">
+                <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                    <h1>日本,Sinsakurあ District</h1>
+                    <div><i class="fa-solid fa-star"></i>4.8</div>
+                </div>
+                <span>モダンインテリアのお部屋</span>
+                <span>3/28日〜3/29日</span>
+                <span>¥19,990/泊</span>
+            </div>
+        </div>
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+                <img width="308" height="283" src="./img/photo12.jpg">
+                <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                    <h1>日本,Osaka</h1>
+                    <div><i class="fa-solid fa-star"></i>5.0</div>
+                </div>
+                <span>4人ー6人宿泊可能</span>
+                <span>3/26日〜3/29日</span>
+                <span>¥44,000/泊</span>
+            </div>
+        </div>
+        <div class="place-list-item">
+            <div class="place-img__wrapper">
+                <img width="308" height="283" src="./img/photo13.jpg">
+                <div class="place-list-item__heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="discription-section">
+                <div class="description-section__title">
+                    <h1>日本,Kobe</h1>
+                    <div><i class="fa-solid fa-star"></i>4.9</div>
+                </div>
+                <span>キッチン完備</span>
+                <span>3/23日〜3/25日</span>
+                <span>¥29,800/泊</span>
+            </div>
+        </div>
+   </div>            
+    </main>
+    <button class="floating-map-btn">
+    <span>地図を表示 <i class="fa-regular fa-map"></i></span>
+   </button> 
+   <footer>
+    <span>&copy; 2024 airbnb yoon</span>
+   </footer>
+<script src="./index.js"></script>
+<script src="https://kit.fontawesome.com/e106b2b7eb.js" crossorigin="anonymous"></script>
+</body>
+</html>

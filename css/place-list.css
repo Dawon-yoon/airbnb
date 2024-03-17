@@ -1,0 +1,43 @@
+
+.place-img__wrapper{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.place-list-item__heart{
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    cursor: pointer;
+}
+.discription-section span{
+    display: block;
+    font-size: 14px;
+    color: gray;
+}
+
+.description-section__title{
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+    margin-top: 10px;
+}
+
+#place-list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 308px);
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 40px 25px;
+
+}
+
+.place-list-item__heart i:active {
+    transform: scale(0.82);
+    transition: all 0.3s ease;
+}
